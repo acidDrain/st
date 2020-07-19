@@ -1,0 +1,15 @@
+--- st-0.8.2-isotop/Makefile	Thu Mar 26 15:55:53 2020
++++ st-0.8.2/Makefile	Sat Feb  9 12:50:41 2019
+@@ -49,12 +49,9 @@ install: st
+ 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/st.1
+ 	tic -sx st.info
+ 	@echo Please see the README file regarding the terminfo entry of st.
+-	mkdir -p $(DESTDIR)$(PREFIX)/share/applications
+-	cp -f st.desktop $(DESTDIR)$(PREFIX)/share/applications
+ 
+ uninstall:
+ 	rm -f $(DESTDIR)$(PREFIX)/bin/st
+ 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
+-	rm -f $(DESTDIR)$(PREFIX)/share/applications/st.desktop
+ 
+ .PHONY: all options clean dist install uninstall

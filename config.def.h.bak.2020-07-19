@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:style=Bold:pixelsize=12:antialias=true:autohint=true";
-static char *font2 = "Roboto Mono for Powerline:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Fira Code:spacing=mono:weight=500:antialias=true:autohint=false:hinting=true";
+static char *font2[] = { "Noto Sans Symbols2:style=Regular:pixelsize=12:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
