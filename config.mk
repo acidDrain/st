@@ -4,8 +4,9 @@ VERSION = 0.8.3
 # Customize below to fit your system
 
 # paths
-HOME = /home/jgrow
-PREFIX = $(HOME)/.local
+# HOME = /home/jgrow
+# PREFIX = $(HOME)/.local
+PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
 
 X11INC = /usr/include/X11
