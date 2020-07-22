@@ -3,7 +3,7 @@ Name=st
 Comment=st suckless terminal
 GenericName=st terminal
 X-GNOME-FullName=st suckless terminal
-Exec=st -t "Simple Terminal" -f "Fira Code:spacing=mono:weight=500:antialias=true:hinting=true:autohint=false:size=11"
+Exec=st -t "Simple Terminal" -f "Fira Code:weight=500:antialias=true:hinting=true:autohint=true:size=14"
 Terminal=false
 Type=Application
 Encoding=UTF-8

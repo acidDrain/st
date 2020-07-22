@@ -53,7 +53,7 @@ install: st
 	@echo Please see the README file regarding the terminfo entry of st.
 	mkdir -p $(DESTDIR)$(PREFIX)/share/applications
 	cp -f st.desktop $(DESTDIR)$(PREFIX)/share/applications
-	update-desktop-database
+	update-desktop-database $(DESTDIR)$(PREFIX)/share/applications
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st

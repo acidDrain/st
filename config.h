@@ -5,7 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
+<<<<<<< HEAD
 static char *font = "Fira Code:style=Bold:pixelsize=12:antialias=true:autohint=true";
+=======
+static char *font = "Fira Code:style=Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font2[] = { "Noto Sans Symbols2:style=Regular:pixelsize=12:antialias=true:autohint=true" };
+>>>>>>> boxdraw
 static int borderpx = 2;
 
 /*
@@ -101,6 +106,12 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+<<<<<<< HEAD
+=======
+/* bg opacity */
+float alpha = 0.8;
+
+>>>>>>> boxdraw
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
@@ -128,6 +139,10 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
+<<<<<<< HEAD
+=======
+	"black",
+>>>>>>> boxdraw
 };
 
 
@@ -136,7 +151,11 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 7;
+<<<<<<< HEAD
 unsigned int defaultbg = 0;
+=======
+unsigned int defaultbg = 258;
+>>>>>>> boxdraw
 static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
@@ -207,6 +226,11 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+<<<<<<< HEAD
+=======
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+>>>>>>> boxdraw
 };
 
 /*
