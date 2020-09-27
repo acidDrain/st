@@ -79,8 +79,8 @@ mkdir -p /usr/local/bin
 cp -f st /usr/local/bin
 chmod 755 /usr/local/bin/st
 mkdir -p /usr/local/share/man/man1
-sed "s/VERSION/0.8.3/g" < st.1 > /usr/local/share/man/man1/st.1
-chmod 644 /usr/local/share/man/man1/st.1
+sed "s/VERSION/0.8.3/g" < st > /usr/local/share/man/man1/st
+chmod 644 /usr/local/share/man/man1/st
 tic -sx st.info
 7 entries written to /etc/terminfo
 Please see the README file regarding the terminfo entry of st.
