@@ -62,7 +62,7 @@ unsigned int tabspaces = 8;
 Once your changes have been saved/committed, you can run the following to
 update your `st` installation.
 
-```
+```sh
 $ rm config.h; make clean; make -j8 ; sudo make -j8 install
 rm -f st st.o x.o boxdraw.o hb.o st-0.8.3.tar.gz
 cp config.def.h config.h
