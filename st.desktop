@@ -7,9 +7,9 @@ Exec=st -t "Simple Terminal" -f "Fira Code:weight=500:antialias=true:hinting=tru
 Terminal=false
 Type=Application
 Encoding=UTF-8
-Icon=/usr/local/share/applications/st-logo.png
-#Icon=/home/jgrow/.config/st/st-logo.svg
-#Icon=utilities-terminal
+Icon=/usr/share/icons/hicolor/scalable/apps/st.svg
 Categories=System;TerminalEmulator;
 Keywords=shell;prompt;command;commandline;cmd;
+StartupWMClass=st
+StartupNotify=true
 
