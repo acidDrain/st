@@ -93,11 +93,20 @@ update-desktop-database /usr/local/share/applications
 
 ```
 
+Finally, to install the `st` logo to use for the icon, copy `st.svg`
+to appropriate `$XDG` icon directory e.g.
+`/usr/share/icons/hicolor/scalable/apps/st.svg`
+
+```sh
+$ cp st.svg /usr/share/icons/hicolor/scalable/apps/st.svg
+
+```
+
 
 ## Running st
 
-If you did not install st with make clean install, you must compile
-the st terminfo entry with the following command:
+If you did not install `st` with `make clean install`, you must compile
+the `st` `terminfo` entry with the following command:
 
 ```sh
 $ tic -sx st.info
