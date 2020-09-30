@@ -63,11 +63,12 @@ Once your changes have been saved/committed, you can run the following to
 update your `st` installation.
 
 ```sh
-$ rm config.h; make clean; make -j8 ; sudo make -j8 install
+$ make clean && make config.h && make -j8 ; sudo make -j8 install
+
 rm -f st st.o x.o boxdraw.o hb.o st-0.8.3.tar.gz
-cp config.def.h config.h
-st build options:
+make: 'config.h' is up to date.
 c99 -I/usr/include/X11  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2`  `pkg-config --cflags harfbuzz` -DVERSION=\"0.8.3\" -D_XOPEN_SOURCE=600  -O -c st.c
+st build options:
 c99 -I/usr/include/X11  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2`  `pkg-config --cflags harfbuzz` -DVERSION=\"0.8.3\" -D_XOPEN_SOURCE=600  -O -c x.c
 c99 -I/usr/include/X11  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2`  `pkg-config --cflags harfbuzz` -DVERSION=\"0.8.3\" -D_XOPEN_SOURCE=600  -O -c boxdraw.c
 c99 -I/usr/include/X11  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2`  `pkg-config --cflags harfbuzz` -DVERSION=\"0.8.3\" -D_XOPEN_SOURCE=600  -O -c hb.c
@@ -75,6 +76,7 @@ CFLAGS  = -I/usr/include/X11  -I/usr/include/uuid -I/usr/include/freetype2 -I/us
 LDFLAGS = -L/usr/lib/X11 -lm -lrt -lX11 -lutil -lXft -lXrender -lfontconfig -lfreetype  -lfreetype  -lharfbuzz
 CC      = c99
 c99 -o st st.o x.o boxdraw.o hb.o -L/usr/lib/X11 -lm -lrt -lX11 -lutil -lXft -lXrender `pkg-config --libs fontconfig`  `pkg-config --libs freetype2`  `pkg-config --libs harfbuzz`
+[sudo] password for jgrow:
 mkdir -p /usr/local/bin
 cp -f st /usr/local/bin
 chmod 755 /usr/local/bin/st
@@ -87,6 +89,7 @@ Please see the README file regarding the terminfo entry of st.
 mkdir -p /usr/local/share/applications
 cp -f st.desktop /usr/local/share/applications
 update-desktop-database /usr/local/share/applications
+
 
 ```
 
