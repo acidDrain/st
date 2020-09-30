@@ -3,12 +3,13 @@ Name=st
 Comment=st suckless terminal
 GenericName=st terminal
 X-GNOME-FullName=st suckless terminal
-Exec=st -t "Simple Terminal" -f "Fira Code:spacing=mono:weight=400:antialias=true:hinting=true:autohint=true:size=12"
+Exec=st -t "Simple Terminal" -f "Fira Code:weight=500:antialias=true:hinting=true:autohint=false:size=11:rgba=rgb"
 Terminal=false
 Type=Application
 Encoding=UTF-8
-#Icon=/home/jgrow/.config/st/st-logo.svg
-Icon=utilities-terminal
+Icon=/usr/share/icons/hicolor/scalable/apps/st.svg
 Categories=System;TerminalEmulator;
 Keywords=shell;prompt;command;commandline;cmd;
+StartupWMClass=st
+StartupNotify=true
 

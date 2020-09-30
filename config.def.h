@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:style=Mono:pixelsize=12:antialias=true:autohint=true";
-static char *font2[] = { "Noto Sans Symbols2:style=Regular:pixelsize=12:antialias=true:autohint=true" };
+static char *font = "Fira Code:weight=500:antialias=true:hinting=true:autohint=true:rgba=rgb";
+static char *font2[] = { "Noto Sans Symbols2:style=Regular:hinting=true:antialias=true:autohint=true:rgba=rgb" };
 static int borderpx = 2;
 
 /*
@@ -17,7 +17,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/usr/bin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -106,9 +106,16 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+/* float alpha = 0.55; */
+float alpha = 0.99;
+
 /* Terminal colors (16 first used in escape sequence) */
+
 static const char *colorname[] = {
+
 	/* 8 normal colors */
+
 	"black",
 	"red3",
 	"green3",
@@ -119,6 +126,7 @@ static const char *colorname[] = {
 	"gray90",
 
 	/* 8 bright colors */
+
 	"gray50",
 	"red",
 	"green",
@@ -127,22 +135,48 @@ static const char *colorname[] = {
 	"magenta",
 	"cyan",
 	"white",
-
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
+
 	"#cccccc",
 	"#555555",
+	"black",
+
 };
 
+/* Terminal colors (16 first used in escape sequence) */
+
+/* static const char *colorname[] = { */
+
+/*   /1* 8 normal colors *1/ */
+/*   [0] = "#282828", /1* hard contrast: #1d2021 / soft contrast: #32302f *1/ */
+/*   [1] = "#cc241d", /1* red     *1/ */
+/*   [2] = "#98971a", /1* green   *1/ */
+/*   [3] = "#d79921", /1* yellow  *1/ */
+/*   [4] = "#458588", /1* blue    *1/ */
+/*   [5] = "#b16286", /1* magenta *1/ */
+/*   [6] = "#689d6a", /1* cyan    *1/ */
+/*   [7] = "#a89984", /1* white   *1/ */
+
+/*   /1* 8 bright colors *1/ */
+/*   [8]  = "#928374", /1* black   *1/ */
+/*   [9]  = "#fb4934", /1* red     *1/ */
+/*   [10] = "#b8bb26", /1* green   *1/ */
+/*   [11] = "#fabd2f", /1* yellow  *1/ */
+/*   [12] = "#83a598", /1* blue    *1/ */
+/*   [13] = "#d3869b", /1* magenta *1/ */
+/*   [14] = "#8ec07c", /1* cyan    *1/ */
+/*   [15] = "#ebdbb2", /1* white   *1/ */
+/* }; */
 
 /*
  * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
+ * foreground, background, cursor
  */
 unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
+unsigned int defaultbg = 258;
+static unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -485,3 +519,4 @@ static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
+

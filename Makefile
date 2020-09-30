@@ -37,7 +37,7 @@ clean:
 dist: clean
 	mkdir -p st-$(VERSION)
 	cp -R FAQ LEGACY TODO LICENSE Makefile README config.mk\
-		config.def.h st.info st.1 arg.h st.h win.h $(SRC)\
+		config.def.h st.info st arg.h st.h win.h $(SRC)\
 		st-$(VERSION)
 	tar -cf - st-$(VERSION) | gzip > st-$(VERSION).tar.gz
 	rm -rf st-$(VERSION)
@@ -47,8 +47,8 @@ install: st
 	cp -f st $(DESTDIR)$(PREFIX)/bin
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/st
 	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
-	sed "s/VERSION/$(VERSION)/g" < st.1 > $(DESTDIR)$(MANPREFIX)/man1/st.1
-	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/st.1
+	sed "s/VERSION/$(VERSION)/g" < st > $(DESTDIR)$(MANPREFIX)/man1/st
+	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/st
 	tic -sx st.info
 	@echo Please see the README file regarding the terminfo entry of st.
 	mkdir -p $(DESTDIR)$(PREFIX)/share/applications
@@ -57,7 +57,7 @@ install: st
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
-	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
+	rm -f $(DESTDIR)$(MANPREFIX)/man1/st
 	rm -f $(DESTDIR)$(PREFIX)/share/applications/st.desktop
 
 .PHONY: all options clean dist install uninstall
