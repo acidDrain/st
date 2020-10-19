@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Fira Code:weight=500:antialias=true:hinting=true:autohint=true";
-static char *font2[] = { "Noto Sans Symbols2:style=Regular:hinting=true:antialias=true:autohint=true" };
+static char *font2[] = { "MesloLGS NF:weight=500:antialias=true:hinting=true:autohint=true" };
 static int borderpx = 2;
 
 /*
