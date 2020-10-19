@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:weight=500:antialias=true:hinting=true:autohint=true:rgba=rgb";
-static char *font2[] = { "Noto Sans Symbols2:style=Regular:hinting=true:antialias=true:autohint=true:rgba=rgb" };
+static char *font = "Fira Code:weight=500:antialias=true:hinting=true:autohint=true";
+static char *font2[] = { "Noto Sans Symbols2:style=Regular:hinting=true:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -87,8 +87,8 @@ const int boxdraw_braille = 0;
 static int bellvolume = 0;
 
 /* default TERM value */
-/* char *termname = "st-256color"; */
-char *termname = "tmux-256color";
+char *termname = "st-256color";
+/* char *termname = "tmux-256color"; */
 
 /*
  * spaces per tab
@@ -108,8 +108,8 @@ char *termname = "tmux-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-/* float alpha = 0.55; */
-float alpha = 0.99;
+float alpha = 0.55;
+/* float alpha = 0.99; */
 
 /* Terminal colors (16 first used in escape sequence) */
 
