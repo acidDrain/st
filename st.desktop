@@ -3,7 +3,7 @@ Name=st
 Comment=st suckless terminal
 GenericName=st terminal
 X-GNOME-FullName=st suckless terminal
-Exec=st -c "st-256color" -t "Suckless Terminal" -f "Fira Code:weight=500:antialias=true:hinting=true:autohint=false:size=11" -f "MesloLGS NF:weight=500:antialias=true:hinting=true:autohint=false:size=11"
+Exec=st -c "st-256color" -t "Suckless Terminal" -f "Fira Code:style=bold:size=11:hinting=true:autohint=true:antialias=true:hintstyle=hintslight"
 Terminal=false
 Type=Application
 Encoding=UTF-8

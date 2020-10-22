@@ -5,9 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:weight=500:antialias=true:hinting=true:autohint=true";
-static char *font2[] = { "MesloLGS NF:weight=500:antialias=true:hinting=true:autohint=true" };
+static char *font = "Fira Code";
+static char *font2[] = { "MesloLGS NF:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb" };
 static int borderpx = 2;
+/* static char *font = "Fira Code:hinting=true:hintstyle=hintfull:antialias=true:autohint=true:rgba=rgb"; */
+/* static char *font2[] = { "MesloLGS NF:hinting=true:hintstyle=hintfull:antialias=true:autohint=true:rgba=rgb" }; */
+/* static int borderpx = 2; */
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -108,7 +111,8 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.55;
+/* float alpha = 0.55; */
+float alpha = 0.85;
 /* float alpha = 0.99; */
 
 /* Terminal colors (16 first used in escape sequence) */
