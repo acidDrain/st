@@ -2,14 +2,14 @@
 Name=st
 Comment=st suckless terminal
 GenericName=st terminal
-X-GNOME-FullName=st suckless terminal
-Exec=st -c "st-256color" -t "Suckless Terminal" -f "Fira Code:style=bold:size=11:hinting=true:autohint=true:antialias=true:hintstyle=hintslight"
+#X-GNOME-FullName=st suckless terminal
+Exec=st -c "st-256color" -f "Fira Code:style=bold:hinting=true:autohint=true:antialias=true:hintstyle=hintslight"
 Terminal=false
 Type=Application
 Encoding=UTF-8
 Icon=st
 Categories=System;TerminalEmulator;
 Keywords=shell;prompt;command;commandline;cmd;
-StartupWMClass=st-256color
-StartupNotify=true
+#StartupWMClass=st-256color
+#StartupNotify=true
 
