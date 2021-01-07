@@ -10,10 +10,12 @@ static char *font = "Fira Code Nerd Font:size=10:hinting=true:hintstyle=hintfull
 static char *font2[] = {
   "MesloLGS Nerd Font:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
   "Material Icons:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
-  "unifont:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
+  "Unifont:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
   "Misc Termsynu:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=false:autohint=true:rgba=rgb",
   "NotoSansDisplay Nerd Font:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
-  "Font Awesome 5 Free:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb"
+  "Font Awesome 5 Free:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
+  "BitstreamVeraSansMono Nerd Font:pixelsize=11:antialias=true:autohint=true",
+  "Inconsolata Nerd Font:pixelsize=12:antialias=true:autohint=true",
 };
 
 static int borderpx = 12;
@@ -29,7 +31,7 @@ static int borderpx = 12;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/usr/bin/zsh";
+static char *shell = "/usr/sbin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -86,11 +88,11 @@ static unsigned int cursorthickness = 2;
  *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
  * 0: disable (render all U25XX glyphs normally from the font).
  */
-const int boxdraw = 0;
-const int boxdraw_bold = 0;
+const int boxdraw = 1;
+const int boxdraw_bold = 1;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
-const int boxdraw_braille = 0;
+const int boxdraw_braille = 1;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
