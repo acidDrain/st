@@ -20,7 +20,7 @@ static char *font2[] = {
   "Font Awesome 5 Free:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb"
 };
 
-static int borderpx = 8;
+static int borderpx = 2;
 /* static int borderpx = 8; */
 /* static char *font = "Fira Code:hinting=true:hintstyle=hintfull:antialias=true:autohint=true:rgba=rgb"; */
 /* static char *font2[] = { "MesloLGS NF:hinting=true:hintstyle=hintfull:antialias=true:autohint=true:rgba=rgb" }; */
@@ -212,15 +212,15 @@ static unsigned int cursorshape = 2;
  * Whether to use pixel geometry or cell geometry
  */
 
-/* static Geometry geometry = CellGeometry; */
-static Geometry geometry = PixelGeometry;
+static Geometry geometry = CellGeometry;
+/* static Geometry geometry = PixelGeometry; */
 
 /*
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 120;
+static unsigned int rows = 48;
 
 /*
  * Default width and height (including borders!)
