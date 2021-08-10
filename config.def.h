@@ -5,19 +5,19 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode Nerd Font:size=10:hinting=true:hintstyle=hintfull:antialias=true:autohint=true:rgba=rgb";
+static char *font = "FiraCode Nerd Font:size=10:hinting=true:hintstyle=hintfull:antialias=true:autohint=true";
 
 static char *font2[] = {
-  "MesloLGS Nerd Font:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
-  "Material Icons:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
+  "MesloLGS Nerd Font:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true",
+  "Material Icons:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true",
   "Noto Sans:size=10",
   "icomoon-feather:size=10",
   "Iosevka Nerd Font:size=20",
   "Hurmit Nerd Font:style=light:size=10",
-  "Unifont:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
-  "Misc Termsynu:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=false:autohint=true:rgba=rgb",
-  "NotoSansDisplay Nerd Font:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb",
-  "Font Awesome 5 Free:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true:rgba=rgb"
+  "Unifont:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true",
+  "Misc Termsynu:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=false:autohint=true",
+  "NotoSansDisplay Nerd Font:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true",
+  "Font Awesome 5 Free:style=Regular:size=10:hinting=true:hintstyle=hintslight:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
